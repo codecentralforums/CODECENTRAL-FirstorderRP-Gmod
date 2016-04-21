@@ -1,0 +1,754 @@
+--FIRSTORDERRP GMOD ONLY
+--FIRSTORDERRP GMOD ONLY
+
+    TEAM_STORMTROOPER = DarkRP.createJob("Stormtrooper",{
+	color = Color(255, 0, 0, 255),
+	model = "models/npc/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "stormtrooper",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Stormtroopers",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "stormtrooper" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_STORMTROOPERC = DarkRP.createJob("Stormtrooper Chief",{
+	color = Color(255, 0, 0, 255),
+	model = "models/npc/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "stormtrooperc",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Stormtroopers",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "stormtrooperc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_STORMTROOPERCO = DarkRP.createJob("Stormtrooper CO",{
+	color = Color(255, 0, 0, 255),
+	model = "models/npc/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "stormtrooperco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Stormtroopers",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "stormtrooperco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHOCK = DarkRP.createJob("Shock Trooper",{
+	color = Color(255, 0, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shocktrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shock",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shock",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shock" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHOCKC = DarkRP.createJob("Shock Chief",{
+	color = Color(255, 0, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shocktrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shockc",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shock",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shockc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHOCKCO = DarkRP.createJob("Shock CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shocktrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shockco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shock",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shockco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHADOW = DarkRP.createJob("Shadow Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shadowtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shadowc",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shadow",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shadow" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHADOWC = DarkRP.createJob("Shadow Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shadowtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shadowco",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shadow",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shadowc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SHADOWCO = DarkRP.createJob("Shadow CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_shadowtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "shadowco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Shadow",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "shadowco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SPEC = DarkRP.createJob("Spec Ops Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_spec_ops_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "spec",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Spec Ops",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "specops" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SPECC = DarkRP.createJob("Spec Ops Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_spec_ops_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "specc",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Spec Ops",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "specopsc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SPECCO = DarkRP.createJob("Spec Ops CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_spec_ops_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "specco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Spec Ops",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "specopsco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_228THC = DarkRP.createJob("228th Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_228thtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "228th",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "228th",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "228th" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_228THC = DarkRP.createJob("228th Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_228thtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "228thc",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "228th",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "228thc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_228THCO = DarkRP.createJob("228th CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_228thtrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "228thco",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "228th",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "228thco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_DESERT = DarkRP.createJob("Desert Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_deserttrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "desert",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Desert",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "desert" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_DESERTC = DarkRP.createJob("Desert Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_deserttrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "desertc",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Desert",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "desertc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_DESERTCO = DarkRP.createJob("Desert CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_deserttrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "desertco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Desert",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "desertco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SWAMP = DarkRP.createJob("Swamp Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_camo_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "swamp",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Swamp",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "swamp" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SWAMPC = DarkRP.createJob("Swamp Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_camo_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "swampc",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Swamp",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "swampc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_SWAMPCO = DarkRP.createJob("Swamp CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_camo_trooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "swampco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Swamp",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "swampco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MAGMA = DarkRP.createJob("Magma Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_magmatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "magma",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Magma",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "magma" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MAGMAC = DarkRP.createJob("Magma Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_magmatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "magmac",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Magma",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "magmac" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MAGMACO = DarkRP.createJob("Magma CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_magmatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "magmaco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Magma",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "magmaco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MEDIC = DarkRP.createJob("Medic Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper_pink.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d", "med_kit"},
+	command = "medic",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Medics",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "medic" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MEDICC = DarkRP.createJob("Medic Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper_pink.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d", "med_kit"},
+	command = "medicc",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Medics",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "medicc" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_MEDICCO = DarkRP.createJob("Medic CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper_pink.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d", "med_kit"},
+	command = "medicco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Medics",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "medicco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_NOVA = DarkRP.createJob("Nova Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_novatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "nova",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Nova",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "nova" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_NOVAC = DarkRP.createJob("Nova Chief",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_novatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "novac",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Nova",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "novac" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_NOVACO = DarkRP.createJob("Nova CO",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_novatrooper.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "novaco",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Nova",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "novaco" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_CADET = DarkRP.createJob("First Order Cadet",{
+	color = Color(255, 255, 255, 255),
+	model = "models/player/Group01/male_06.mdl",
+	description = [[CADET]],
+	weapons = {},
+	command = "foc",
+	max = 0,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Stormtroopers",
+})
+
+    TEAM_ENSIGN = DarkRP.createJob("Ensign",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_mp1.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "ensign",
+	max = 10,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "ensign" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_LT = DarkRP.createJob("Lieutenant",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_mp3.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "lt",
+	max = 10,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "lieutenant" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_COMMANDER = DarkRP.createJob("Commander",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_male_04.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "co",
+	max = 10,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "commander" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_CAPTAIN = DarkRP.createJob("Captain",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_male_06.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "cpt",
+	max = 10,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_RA = DarkRP.createJob("Rear Admiral",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_male_07.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "ra",
+	max = 5,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_VA = DarkRP.createJob("Vice Admiral",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_male_08.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "va",
+	max = 4,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_A = DarkRP.createJob("Admiral",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_male_05.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "a",
+	max = 3,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_GA = DarkRP.createJob("Grand Admiral",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/scifi_bill.mdl",
+	description = [[Navy]],
+	weapons = {"weapon_752bf3_se14c"},
+	command = "ga",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+    TEAM_ORANGE = DarkRP.createJob("Orange Trooper",{
+	color = Color(0, 255, 0, 255),
+	model = "models/player/star wars the force awakens/first order trooper/spartanmark6/first_order_trooper_orange.mdl",
+	description = [[Regiment]],
+	weapons = {"sw_weapon_first_order_f11d"},
+	command = "ga",
+	max = 1,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	category = "Navy",
+	customCheck = function(ply) return ply:GetNWString("usergroup") == "captain" or ply:IsAdmin() end,
+    CustomCheckFailMsg = "You must be whitelisted!"
+})
+
+
+
+
+
+--CATEGORIES
+
+DarkRP.createCategory{
+    name = "Stormtroopers", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 1, 
+}
+
+DarkRP.createCategory{
+    name = "Shock", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 2, 
+}
+
+DarkRP.createCategory{
+    name = "Shadow", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 3, 
+}
+
+DarkRP.createCategory{
+    name = "Spec Ops", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 4, 
+}
+
+DarkRP.createCategory{
+    name = "228th", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 5, 
+}
+
+DarkRP.createCategory{
+    name = "Desert", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 6, 
+}
+
+DarkRP.createCategory{
+    name = "Swamp", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 7, 
+}
+
+DarkRP.createCategory{
+    name = "Magma", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 8, 
+}
+
+DarkRP.createCategory{
+    name = "Medics", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 9, 
+}
+
+DarkRP.createCategory{
+    name = "Nova", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 10, 
+}
+
+DarkRP.createCategory{
+    name = "Navy", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 20, 
+}
+
+DarkRP.createCategory{
+    name = "Orange", 
+    categorises = "jobs", 
+    startExpanded = true, 
+    color = Color(0, 0, 0, 255), 
+    canSee = function(ply) return true end, 
+    sortOrder = 11, 
+}
